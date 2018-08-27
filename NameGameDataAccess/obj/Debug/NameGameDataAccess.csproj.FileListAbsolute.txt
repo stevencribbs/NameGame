@@ -1,0 +1,12 @@
+C:\Projects\NameGame\NameGameDataAccess\bin\Debug\NameGameDataAccess.dll.config
+C:\Projects\NameGame\NameGameDataAccess\bin\Debug\NameGameDataAccess.dll
+C:\Projects\NameGame\NameGameDataAccess\bin\Debug\NameGameDataAccess.pdb
+C:\Projects\NameGame\NameGameDataAccess\bin\Debug\EntityFramework.dll
+C:\Projects\NameGame\NameGameDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\NameGame\NameGameDataAccess\bin\Debug\EntityFramework.xml
+C:\Projects\NameGame\NameGameDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\NameGame\NameGameDataAccess\obj\Debug\NameGameDataAccess.csprojAssemblyReference.cache
+C:\Projects\NameGame\NameGameDataAccess\obj\Debug\NameGameDataAccess.csproj.CoreCompileInputs.cache
+C:\Projects\NameGame\NameGameDataAccess\obj\Debug\NameGameDataAccess.csproj.CopyComplete
+C:\Projects\NameGame\NameGameDataAccess\obj\Debug\NameGameDataAccess.dll
+C:\Projects\NameGame\NameGameDataAccess\obj\Debug\NameGameDataAccess.pdb

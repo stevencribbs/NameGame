@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NameGameDBModelStoreContainer" CdmEntityContainer="NameGameDBEntities">
+    <EntitySetMapping Name="Games">
+      <EntityTypeMapping TypeName="NameGameDBModel.Game">
+        <MappingFragment StoreEntitySet="Games">
+          <ScalarProperty Name="QClues" ColumnName="QClues" />
+          <ScalarProperty Name="QAnswers" ColumnName="QAnswers" />
+          <ScalarProperty Name="GameId" ColumnName="GameId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="GameMode" ColumnName="GameMode" />
+          <ScalarProperty Name="GameData" ColumnName="GameData" />
+          <ScalarProperty Name="QCount" ColumnName="QCount" />
+          <ScalarProperty Name="QAttempts" ColumnName="QAttempts" />
+          <ScalarProperty Name="QCompleted" ColumnName="QCompleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="NameGameDBModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserStats">
+      <EntityTypeMapping TypeName="NameGameDBModel.UserStat">
+        <MappingFragment StoreEntitySet="UserStats">
+          <ScalarProperty Name="StatId" ColumnName="StatId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="CorrectAttempts" ColumnName="CorrectAttempts" />
+          <ScalarProperty Name="IncorrectAttempts" ColumnName="IncorrectAttempts" />
+          <ScalarProperty Name="QuestionsPresented" ColumnName="QuestionsPresented" />
+          <ScalarProperty Name="TimeInGame" ColumnName="TimeInGame" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

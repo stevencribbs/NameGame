@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NameGameDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Game">
+    <Key>
+      <PropertyRef Name="GameId" />
+    </Key>
+    <Property Name="GameId" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="GameMode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="GameData" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="QCount" Type="Int32" Nullable="false" />
+    <Property Name="QAttempts" Type="Int32" Nullable="false" />
+    <Property Name="QCompleted" Type="Int32" Nullable="false" />
+    <Property Name="QAnswers" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="QClues" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="UserStat">
+    <Key>
+      <PropertyRef Name="StatId" />
+    </Key>
+    <Property Name="StatId" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="CorrectAttempts" Type="Int32" />
+    <Property Name="IncorrectAttempts" Type="Int32" />
+    <Property Name="QuestionsPresented" Type="Int32" />
+    <Property Name="TimeInGame" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="NameGameDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Games" EntityType="Self.Game" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="UserStats" EntityType="Self.UserStat" />
+  </EntityContainer>
+</Schema>
